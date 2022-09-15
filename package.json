@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "pretest": "echo pretest",
+    "test": "npx playwright test tests/specs/",    
+    "posttest": "npx playwright show-report && exit"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
