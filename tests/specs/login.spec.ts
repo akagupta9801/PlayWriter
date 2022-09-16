@@ -6,10 +6,10 @@ test('swaglabs', async ({ page }) => {
   //await expect(page).tohv(/Playwright/);
   //const  locatorPage= page.locator('//*[contains(text(),bot_column]')
 
-  //const  locatorPage= page.locator('xpath=//div[@class=bot_column]')
+  //const  locatorPage= page.locator("xpath=//div[@class='bot_column']")
   //console.log(locatorPage);
    const  locatorPage= page.locator('[class=bot_column]')
-   console.log(locatorPage);
+   //console.log(locatorPage);
   await expect(locatorPage).toHaveAttribute('class', 'bot_column');
   
   const userName = page.locator('id=user-name');
