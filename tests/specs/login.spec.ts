@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('swaglabs', async ({ page }) => {
+ test('swaglabs', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
 
   //await expect(page).tohv(/Playwright/);
@@ -15,7 +15,7 @@ test('swaglabs', async ({ page }) => {
   const userName = page.locator('id=user-name');
   const password = page.locator('id=password');
 
-  
+ 
   await expect(userName).toHaveAttribute('name', 'user-name');
   await userName.fill('standard_user');
     
