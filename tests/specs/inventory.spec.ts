@@ -1,14 +1,15 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, selectors } from '@playwright/test';
 import { Url } from './Url.spec';
+import {PageLocators} from './locators.spec'
 
+let  pagelocators= new PageLocators();
 
 test('check Inventory details ', async ({ page }) => {
-    var inventoryUrl=Url.Inventory;
+    var inventoryUrl=Url.inventory;
     await page.goto('inventoryUrl');
-
-    await expect(page.locator(''))
-
-
+    await expect(pagelocators.selector.firstInventory);
+    await page.locator(pagelocators.selector.addFirstInventory).click();
+    
 
 
 });

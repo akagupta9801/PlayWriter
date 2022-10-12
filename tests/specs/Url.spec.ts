@@ -1,5 +1,7 @@
 export class Url {
-    public static readonly Base = "hhttps://www.saucedemo.com/";
+    public static readonly base = "https://www.saucedemo.com/";
   
-    public static readonly Inventory = `${Url.Base}/inventory.html`;
+    public static readonly inventory = `${Url.base}/inventory.html`;
+
+    public static readonly cart = `${Url.base}/cart.html`;
   }
